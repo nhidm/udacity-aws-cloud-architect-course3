@@ -1,0 +1,10 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+
+After ran successful attack and waiting for 3 hours but GuardDuty didn't show any Brute force attack.
+Re-check after 8 hours, but no Findings found in GuardDuty.
+
+### Screenshots
+- BruteForce Attack: E3_BruteForceAttack.PNG
+- GuardDuty Findings: E3T1_guardduty.PNG
+
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.

@@ -1,0 +1,26 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+- Checkov
+- Terrascan
+
+### Example vulnerability
+- Ensure all data stored in the EBS is securely encrypted
+- Security Groups - Unrestricted Specific Ports - (SSH,22)
+
+##Scan AMI’s or containers for OS vulnerabilities
+- Amazon Inspector
+- Aqua Security
+
+### Example vulnerability
+- Vulnerable container images
+- Unpatched security vulnerabilities
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+- AWS Config
+- Amazon Inspector
+
+### Example vulnerability
+- Unencrypted S3 Buckets
+- Non-compliant Security Groups
+- Outdated Software

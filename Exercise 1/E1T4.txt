@@ -1,0 +1,10 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+Security Group "WebAppSG" and "AppLoadBalancerSG" allow all traffic from all IPs (CidrIp: 0.0.0.0/0) on all protocols (IpProtocol: -1). 
+This is not secure as it opens the door to all types of attacks.
+
+# Poor practice 2
+The IAM Role policy "InstanceRolePolicy-C3" allows the action s3:* on all resources (Resource: '*').
+This can lead to security risks if the role is abused.
+Only grant the necessary permissions for specific tasks.

@@ -1,0 +1,15 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+### Vulnerabilities
+1. Hardware MFA should be enabled for the root user
+2. MFA should be enabled for the root user
+3. Security groups (WebAppSG, WebAppSG) should not allow ingress from 0.0.0.0/0 or ::/0 to port 22
+4. VPC default security groups should not allow inbound or outbound traffic
+5. CloudTrail should be enabled and configured with at least one multi-Region trail that includes read and write management events
+
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+1. Add a hardware MFA device for the root user
+2. Enable MFA for the root user
+3. Remove the rule that allows access to port 22 in inbound rules of Security Groups
+4. Create new Security Groups which will be limited traffic on the Security Groups to only allow traffic from specific sources or IP addresses.
