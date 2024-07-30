@@ -8,3 +8,6 @@ Re-check after 8 hours, but no Findings found in GuardDuty.
 - GuardDuty Findings: E3T1_guardduty.PNG
 
 # Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+
+AWS GuardDuty detects attacks by analyzing data from AWS CloudTrail, VPC Flow Logs, and DNS logs.
+It identifies suspicious activity, like unusual login attempts or communication with known malicious IPs, by correlating this data with threat intelligence feeds and behavioral analysis.
